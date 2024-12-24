@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Details Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .details-list {
+            margin-top: 20px;
+        }
+        .details-item {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Name and City</h1>
+    <div class="container">
+        <input type="text" id="nameInput" placeholder="Enter name" />
+        <input type="text" id="cityInput" placeholder="Enter city" />
+        <button onclick="addPersonDetails()">Show Details</button>
+        <div class="details-list" id="detailsList"></div>
+    </div>
+    <script>
+        function addPersonDetails() {
+            // Get input values
+            const name = document.getElementById('nameInput').value.trim();
+            const city = document.getElementById('cityInput').value.trim();
+
+            if (name && city) {
+                // Create a new div for the details
+                const detailsDiv = document.createElement('div');
+                detailsDiv.className = 'details-item';
+                detailsDiv.textContent = `Name: ${name}, City: ${city}`;
+
+                // Append the details div to the list
+                document.getElementById('detailsList').appendChild(detailsDiv);
+
+                // Clear the input fields
+                document.getElementById('nameInput').value = '';
+                document.getElementById('cityInput').value = '';
+            } else {
+                alert('Please enter both name and city.');
+            }
+        }
+    </script>
+</body>
+</html>

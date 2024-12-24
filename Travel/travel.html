@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">Tra<span>Book</span>.</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Package</a></li>
+  
+        </ul>
+        <div class="nav__btns">
+          <button class="btn sign__up">Sign Up</button>
+          <button class="btn sign__in">Sign In</button>
+        </div>
+      </nav>
+      <header class="header__container">
+        <div class="header__image">
+          <div class="header__image__card header__image__card-1">
+            <span><i class="ri-key-line"></i></span>
+            Hotel Booking
+          </div>
+          <div class="header__image__card header__image__card-2">
+            <span><i class="ri-passport-line"></i></span>
+            Flight Tickets
+          </div>
+          <div class="header__image__card header__image__card-3">
+            <span><i class="ri-map-2-line"></i></span>
+            Best Tour Awards
+          </div>
+          <div class="header__image__card header__image__card-4">
+            <span><i class="ri-map-pin-2-fill"></i></span>
+            Explore
+          </div>
+        <img src="../trabook/header.png" alt="header" >
+        </div>
+        <div class="header__content">
+          <h1>LET'S GO!<br />THE <span>ADVENTURE</span> IS WAITING FOR YOU</h1>
+          <p>
+            Embark on a thrilling journey where every sunrise brings a new adventure and every sunset leaves behind unforgettable memories. From scaling towering peaks to diving into crystal-clear waters, every moment is a story waiting to be told. Pack your spirit of adventure — the world is calling!
+          </p>
+          <form action="/">
+            <div class="input__row">
+              <div class="input__group">
+                <h5>Destination</h5>
+                <div>
+                  <span><i class="ri-map-pin-line"></i></span>
+                  <input type="text" placeholder="Paris" />
+                </div>
+              </div>
+              <div class="input__group">
+                <h5>Date</h5>
+                <div>
+                  <span><i class="ri-calendar-2-line"></i></span>
+                  <input type="text" placeholder="Date" />
+                </div>
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Guest</h5>
+              <div>
+                <span><i class="ri-account-circle-fill"></i></span>
+                <input type="text" placeholder="No Of Guest" />
+              </div>
+            </div>
+            <button type="submit">Discover Now</button>
+          </form>
+          
+        </div>
+      </header>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="travel.js"></script>
+
+    <!-- Things You Need -->
+    <section class="info">
+        <h2>Things you need to do</h2>
+        <p>We ensure that you'll embark on a perfectly planned ,safe vacation at a price you can afford</p>
+        <div class="info-cards">
+            <div class="card"><b  style="color:orangered">Sign up</b>
+                <p>Complete all the work associated with planning and processing</p>
+            </div>
+            <div class="card"><b  style="color:orangered">Worth of Money</b>
+                <p>
+                    After successful access then book from exclusive deals & pricing
+                </p>
+            </div>
+            <div class="card"><b style="color:orangered">Exciting Travel</b>
+                <p>
+                    Start and explore a wide range of exciting travel experience
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <h2><strong>Exclusive</strong> <span class="highlight">deals & discounts</span></h2>
+        <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+        <div class="deals-cards">
+            <!-- Card 1 -->
+            <div class="deal-card">
+                <img src="../Travel/madrid.jpg" alt="Madrid">
+                <h3>Madrid</h3>
+                <p>⭐ 4.8</p>
+                <p>📍 Spain</p>
+                <p class="price"><span class="old-price">$950</span> <span class="new-price">$850</span></p>
+            </div>
+            <!-- Card 2 -->
+            <div class="deal-card">
+                <img src="../Travel/firenze.jpg" alt="Firenze">
+                <h3>Firenze</h3>
+                <p>⭐ 4.5</p>
+                <p>📍 Italy</p>
+                <p class="price"><span class="old-price">$950</span> <span class="new-price">$750</span></p>
+                <button class="btn-book">Book Now</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="deal-card">
+                <img src="../Travel/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>⭐ 4.4</p>
+                <p>📍 France</p>
+                <p class="price"><span class="old-price">$699</span> <span class="new-price">$599</span></p>
+            </div>
+            <!-- Card 4 -->
+            <div class="deal-card">
+                <img src="../Travel/london.jpg" alt="London">
+                <h3>London</h3>
+                <p>⭐ 4.8</p>
+                <p>📍 UK</p>
+                <p class="price"><span class="old-price">$950</span> <span class="new-price">$850</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacation Plans -->
+    <section class="vacation-section">
+        <h2><strong>Best</strong> <span class="highlight">vacation plan</span></h2>
+        <p style="text-align: center;">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
+        <div class="vacation-cards">
+            <!-- Card 1 -->
+            <div class="vacation-card">
+                <img src="../Travel/rome.jpg" alt="Rome, Italy">
+                <h3>Rome, Italy</h3>
+                <p class="price">$5,42k</p>
+                <p>📍 10 Days Trip</p>
+                <p>⭐ 4.8</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="vacation-card">
+                <img src="../Travel/london1.jpg" alt="London, UK">
+                <h3>London, UK</h3>
+                <p class="price">$2,42k</p>
+                <p>📍 7 Days Trip</p>
+                <p>⭐ 4.7</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="vacation-card">
+                <img src="../Travel/osaka.jpg" alt="Osaka, Japan">
+                <h3>Osaka, Japan</h3>
+                <p class="price">$5,42k</p>
+                <p>📍 10 Days Trip</p>
+                <p>⭐ 4.8</p>
+            </div>
+        </div>
+       
+    </section>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What people say</h2>
+        <div class="testimonial-card">
+            <p>"Life is either a daring adventure, or nothing: This quote is attributed to"</p>
+            <h4 style="color:orangered"> Helen Keller</h4>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h2>Get update with <span class="highlight">latest blog</span></h2>
+        <div class="blog-cards">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="../Travel/Blog1.jpg" alt="Blog 1">
+                <h3>The Amazing Difference a Year of Travelling</h3>
+                <p class="date">Dec 27, 2023</p>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="../Travel/Blog2.jpg" alt="Blog 2">
+                <h3>Travel far enough, you meet yourself</h3>
+                <p class="date">July 10, 2021</p>
+            </div>
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="../Travel/Blog3.jpg" alt="Blog 3">
+                <h3>How to Save Money While Visiting Singapore</h3>
+                <p class="date">Aug 15, 2022</p>
+            </div>
+            <!-- Blog Card 4 -->
+            <div class="blog-card">
+                <img src="../Travel/Blog4.jpg" alt="Blog 4">
+                <h3>Reflections on 5 Months of Travel: Time to Hang</h3>
+                <p class="date">Feb 14, 2024</p>
+            </div>
+        </div>
+        <!-- Navigation Dots -->
+        <div class="blog-dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Subscription -->
+     <div class="subscribe1">
+    <section class="subscribe">
+        <h2>Subscribe and get exclusive deals</h2>
+        <input type="email" placeholder="Enter your email">
+        <button class="btn-primary">Subscribe</button>
+    </section>
+</div>
+    <!-- Footer -->
+    <div class="container">
+        <div class="logo">
+          <h1>Trabook</h1>
+          <p>Book your trip in minutes, get full control for much longer.</p>
+          <div class="social">
+            <a href="#"><i class="ri-facebook-line"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+    
+        <div class="nav">
+          <ul>
+            <li><h2>Company</h2></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Logistic</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+          </ul>
+        </div>
+    
+        <div class="nav">
+          <ul>
+            <li><h2>Contact</h2></li>
+            <li><a href="#">Help/FAQ</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+    
+        <div class="nav">
+          <ul>
+            <li><h2>More</h2></li>
+            <li><a href="#">Press Centre</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">Low fare tips</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    <footer>
+        <p>&copy; 2024 TravelX. All rights reserved.</p>
+    </footer>
+</body>
+</html>

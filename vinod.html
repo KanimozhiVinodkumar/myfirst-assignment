@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City and Work Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>City and Work Details</h1>
+    <div class="container">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <input type="text" id="workInput" placeholder="Enter work details" />
+        <button onclick="addDetails()">Add</button>
+        <ul id="detailsList"></ul>
+    </div>
+    <script>
+        function addDetails() {
+            // Get input values
+            const city = document.getElementById('cityInput').value;
+            const work = document.getElementById('workInput').value;
+
+            if (city && work) {
+                // Create a new list item
+                const listItem = document.createElement('li');
+                listItem.textContent = `City: ${city}, Work: ${work}`;
+
+                // Add the list item to the details list
+                document.getElementById('detailsList').appendChild(listItem);
+
+                // Clear input fields
+                document.getElementById('cityInput').value = '';
+                document.getElementById('workInput').value = '';
+            } else {
+                alert('Please fill in both fields!');
+            }
+        }
+    </script>
+</body>
+</html>
